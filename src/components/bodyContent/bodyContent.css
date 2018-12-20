@@ -1,0 +1,66 @@
+.bodycontent-wrapper {
+    background: linear-gradient( #363738 , 80%, white);
+    padding: 100px 10%;
+    color: white;
+    line-height: 1.3em;
+    min-height: 750px;
+}
+.content {
+    margin:auto;
+    padding: 70px 0;
+    clear: both;
+}
+.content-text {
+    width: 48%;
+}
+.content img {
+    width: 50%;
+}
+.image-right .content-text, 
+.image-left img {
+    float: left;
+}
+.image-left .content-text, 
+.image-right img {
+    float: right;
+}
+
+/* responsiveness */
+@media only screen and (max-width: 1024px) {
+    .bodycontent-wrapper {
+        padding: 50px 200px;
+    }
+    .content {
+        padding: 20px 0;
+    }
+    .image-right .content-text, 
+    .image-left .content-text,
+    .image-left img, 
+    .image-right img {
+        float: none;
+        width: 100%;
+    }
+    .content img {
+        width: 90%;
+        margin: 0 5%;
+    }
+}
+@media only screen and (max-width: 950px) {
+    .bodycontent-wrapper { 
+        padding: 80px 150px; 
+    }
+}
+@media only screen and (max-width: 812px) {
+    .bodycontent-wrapper {
+        padding: 50px 60px;
+    }
+    .content img { 
+        width: 100%; 
+        margin: 0;
+    }
+}
+@media only screen and (max-width: 420px) {
+    .bodycontent-wrapper {
+        padding: 0 20px;
+    }
+}

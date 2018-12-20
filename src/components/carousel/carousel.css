@@ -1,0 +1,206 @@
+.carousel {
+    position: absolute;
+    min-width: 100%;
+    max-width: 100%;
+    padding-top: 30px;
+    font-family: 'Helvetica', sans-serif;
+    overflow: hidden;
+}
+.image-slide {
+    background-size: 150%;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 450px;
+}
+.image-slide:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    min-height: 430px;
+    border: solid white 20px;
+    border-right: none;
+    border-left: none;
+    z-index: 5;
+}
+.filter {
+    position: absolute;
+    min-height: 445px;
+    width: 100%;
+    padding: 0 20px;
+    top: 45px;
+    left: -10px;
+}
+.sliderContent {
+    position: absolute;
+    margin: auto;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    z-index: 10;
+}
+.slide-arrow {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    margin: auto;
+    top: 55%;
+    background-image: url("../../images/sliderarrow.svg");
+    background-size: 100%;
+    background-position: center;
+    z-index: 10;
+}
+.slide-arrow:hover {
+    filter: invert(.5) sepia(1) saturate(5) hue-rotate(175deg);
+}
+.slide-arrow.left {
+    left: 140px;
+    transform: translate(-55%, -50%)rotate(180deg);
+}
+.slide-arrow.right {
+    right: 150px;
+    transform: translate(-55%, -50%);
+}
+.sliderText {
+    width: 65%;
+    float: right;
+    color: white;
+    line-height: 1.3em;
+}
+.sliderText h2 {
+    font-size: 28px;
+    font-weight: lighter;
+}
+.poster {
+    width: 200px;
+    height: 290px;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+
+/* responsiveness */
+@media only screen and (max-width: 1140px) {
+    .slide-arrow.left {
+        left: 70px;
+    }
+    .slide-arrow.right {
+        right: 60px;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .slide-arrow.left {
+        left: 2.5%;
+    }
+    .slide-arrow.right {
+        right: -2%;
+    }
+    .sliderContent {
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 750px) {
+    .image-slide {
+        height: 650px;
+        background-size: 200%;
+    }
+    .image-slide::after {
+        height: 630px;
+    }
+    .filter {
+        height: 655px;
+    }
+    .sliderContent {
+        width: 80%;
+        top: 50%;
+    }
+    .sliderText {
+        float: none;
+        margin: auto;
+        margin-bottom: 50px;
+        width: 100%;
+    }
+    .poster {
+        float: none;
+        margin: auto;
+        margin-left: 40px;
+        width: 250px;
+        height: 350px;
+    }
+    .carouselbtn-wrapper {
+        width: 45%;
+        float: right;
+        margin-top: 30px;
+    }
+    .slide-arrow.left {
+        margin: auto;
+        margin-bottom: 10px;
+        bottom: 0;
+        left: 45%;
+        width: 30px;
+        height: 30px;
+    }
+    .slide-arrow.right {
+        margin: auto;
+        margin-bottom: 10px;
+        bottom: 0;
+        right: 41%;
+        width: 30px;
+        height: 30px;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .sliderContent {
+        width: 95%;
+    }
+    .poster {
+        margin-left: 70px;
+    }
+    .slide-arrow.right {
+        right: 40%;
+    }
+}
+@media only screen and (max-width: 650px) {
+    .carouselbtn-wrapper {
+        width: 35%;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .carouselbtn-wrapper {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .image-slide, .filter {
+        height: 700px;
+    }
+    .image-slide::after {
+        height: 680px;
+    }
+    .poster {
+        margin: auto;
+    }
+    .slide-arrow.left {
+        margin-bottom: 0px;
+        left: 46%;
+    }
+    .slide-arrow.right {
+        margin-bottom: 0px;
+    }
+    .sliderText {
+        margin-bottom: 15px;
+    }
+}
+@media only screen and (max-width: 440px) {
+    .filter {
+        top: 45px;
+    }
+    .slide-arrow.left {
+        left: 44%;
+    }
+    .slide-arrow.right {
+        right: 37%;
+    }
+}

@@ -1,0 +1,35 @@
+button:focus {
+    outline: none;
+}
+.traillerButton {
+    float: left;
+    color: white;
+    background: transparent;
+    padding: 8px 16px;
+    border: solid white 1px;
+    border-radius: 5px;
+    font-family: "Helvetica", sans-serif;
+    font-weight: bold;
+    font-size: 16px;   
+    margin: 0px 5px;
+}
+.traillerButton:hover {
+    color: #2d9eeb;
+    border: solid #2d9eeb 1px;
+}
+@media only screen and (max-width: 750px) {
+    .traillerButton {
+        float: none;
+        width: 150px;
+        margin: 10px 0px;
+    }
+}
+@media only screen and (max-width: 550px) { 
+    .traillerbtn-wrapper {
+       width: 50%;
+       display: inline;
+    }
+    .traillerButton {
+        margin: 10px;
+    }
+}

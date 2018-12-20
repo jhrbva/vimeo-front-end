@@ -1,0 +1,40 @@
+button:focus {
+    outline: none;
+}
+.buynowButton{
+    float: left;
+    color: white;
+    background: #2d9eeb;
+    padding: 8px 16px;
+    border: solid #2d9eeb 1px;
+    border-radius: 5px;
+    font-family: "Helvetica", sans-serif;
+    font-weight: bold;
+    font-size: 16px;  
+    margin: 0px 5px; 
+}
+.buynowButton:hover {
+   background: transparent;
+   border: solid white 1px;
+}
+.buttonIcon {
+    width: 18px;
+    float: left;
+    margin-right: 10px;
+}
+@media only screen and (max-width: 750px) {
+    .buynowButton {
+        float: none;
+        width: 150px;
+        margin: 10px 0px;
+    }
+}
+@media only screen and (max-width: 550px) { 
+    .buynowbtn-wrapper {
+        width: 50%;
+        display: inline;
+    }
+    .buynowButton {
+        margin: 10px;
+    }
+}
