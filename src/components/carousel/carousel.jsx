@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './carousel.css';
 import Buynow from '../buynowButton/buynow';
-import Trailler from '../traillerButton/trailler';
+import Trailer from '../trailerButton/trailer';
 
 //slider images
 import boy from '../../images/boy.jpg';
@@ -83,7 +83,7 @@ const Arrow = ({ direction, clickFunction, glyph }) => (
 const ImageSlide = ({ image, title, text, filter }) => {
 	const bgImage = {
         backgroundImage: `url(${image})`, // for the poster image
-        boxShadow: `0 -650px 60px -600px inset rgba(${filter})`
+        boxShadow: `0 -650px 50px -600px inset rgba(${filter})`
     };
     const filterStyle = {
         backgroundColor: `rgba(${filter})`, //for the background image and filter
@@ -101,7 +101,7 @@ const ImageSlide = ({ image, title, text, filter }) => {
                     <p>{text}</p>
                     <div className="carouselbtn-wrapper">
                         <Buynow />
-                        <Trailler />
+                        <Trailer />
                     </div>
                 </div>
                 <div className="poster" style={bgImage} ></div>
